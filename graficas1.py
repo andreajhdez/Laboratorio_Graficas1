@@ -25,11 +25,11 @@ plt.title('Relación entre las calificaciones de Matemáticas y Ciencias')
 plt.xlabel('Calificaciones de Matemáticas')
 plt.ylabel('Calificacicaciones de Ciencias')
 
-plt.show()
+
 
 # se guarda la grafica como archivo png
 plt.savefig('punto1_grafica_dispersion.png', dpi=300)
-
+plt.show()
 
 # Punto 2: Gráfico barras de error
 prom_matematicas = np.mean(matematicas)
@@ -48,11 +48,11 @@ plt.xlabel('Materias')
 plt.ylabel('Calificaciones promedio')
 plt.legend(handles=[a], labels=['Promedio'], loc='upper left')
 
-plt.show()
+
 
 # Guardar la gráfica como imagen PNG con el nombre específico
 plt.savefig('punto2_grafico_barras_error.png', dpi=300)
-
+plt.show()
 
 # Punto 3: Histograma
 plt.hist(matematicas, bins=10)
@@ -60,7 +60,8 @@ plt.title('Distribución de las calificaciones de Matemáticas')
 plt.xlabel('Calificaciones de Matematicas')
 plt.ylabel('Frecuencia')
 
-plt.show()
+
 
 # Guardar la gráfica como imagen PNG con el nombre específico
 plt.savefig('punto3_histograma.png', dpi=300)
+plt.show()
